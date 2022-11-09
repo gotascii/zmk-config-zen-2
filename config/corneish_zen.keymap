@@ -36,7 +36,7 @@
                         label = "LOWER";
 // &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
 // -----------------------------------------------------------------------------------------
-//         Pn  R   M   Po                  Po         M     R     Pn
+//         Pn  R   M   Po                   Po         M     R     Pn
 // | TAB | 1 | 2 | 3 | 4  | 5     |   | 6 | 7        | 8   | 9   | 0 | + |
 // |     | { | } | ( | ). | PG_UP |   | - | LFT.     | UP  | RGT | [ | ] |
 // |     |   |   | [ | ]  | PGDN  |   | _ | HOME     | DWN | END | \ |   |
@@ -52,15 +52,16 @@
                 raise_layer {
                         label = "RAISE";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+//         Pn  R   M   Po                   Po   M   R   Pn
+// | ESC | # | $ | < | >  |   |   |   | & | |  | ! | * |   |
+// |     | ! | @ | ( | ). |   |   |   | - | =. | < | > |   |
+// |     | % | ^ | [ | ]  |   |   |   | _ | +  |   | \ |   |
+//                   |    |   |   |   |   |    |   |
                         bindings = <
    &kp ESC &kp HASH  &kp DLLR  &kp LT   &kp GT   &trans &trans &kp AMPS  &kp PIPE  &kp EXCL &kp ASTRK &trans
-   &trans  &kp EXCL  &kp AT    &kp LPAR &kp RPAR &trans &trans &kp UNDER &kp EQUAL &kp LT   &kp GT    &trans
-   &trans  &kp PRCNT &kp CARET &kp LBKT &kp RBKT &trans &trans &kp MINUS &kp PLUS  &trans   &kp BSLH  &trans
-                               &trans   &trans   &trans &trans &trans &trans
+   &trans  &kp EXCL  &kp AT    &kp LPAR &kp RPAR &trans &trans &kp MINUS &kp EQUAL &kp LT   &kp GT    &trans
+   &trans  &kp PRCNT &kp CARET &kp LBKT &kp RBKT &trans &trans &kp UNDER &kp PLUS  &trans   &kp BSLH  &trans
+                               &trans   &trans   &trans &trans &trans    &trans
                         >;
                 };
         };
