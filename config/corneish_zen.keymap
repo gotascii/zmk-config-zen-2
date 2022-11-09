@@ -42,10 +42,10 @@
 //    &trans     &trans       &trans       &kp LBKT     &kp RBKT     &KP PG_DOWN    &kp UNDER &kp HOME      &kp DOWN &kp END   &kp BSLH &trans
 //                           	        &trans       &trans       &trans         &trans    &lt LOWER DEL &trans
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6    &kp N7        &kp N8   &kp N9    &kp N0   &kp BSPC
-   &trans     &kp LBRC     &kp RBRC     &kp LPAR     &kp RPAR     &kp PG_UP      &kp MINUS &kp LEFT      &kp UP   &kp RIGHT &kp PLUS &trans
-   &trans     &trans       &trans       &kp LBKT     &kp RBKT     &kp PG_DN      &kp UNDER &kp HOME      &kp DOWN   &kp END    &kp BSLH  &trans
-                          	        &trans       &trans       &trans         &trans    &trans        &trans
+   &kp TAB &kp N1   &kp N2   &kp N3   &kp N4   &kp N5    &kp N6    &kp N7        &kp N8   &kp N9    &kp N0   &kp BSPC
+   &trans  &kp LBRC &kp RBRC &kp LPAR &kp RPAR &kp PG_UP &kp MINUS &kp LEFT      &kp UP   &kp RIGHT &kp PLUS &trans
+   &trans  &trans   &trans   &kp LBKT &kp RBKT &kp PG_DN &kp UNDER &kp HOME      &kp DOWN &kp END   &kp BSLH &trans
+                             &trans   &trans   &trans    &trans    &lt LOWER DEL &trans
                         >;
                 };
 
