@@ -30,7 +30,16 @@
                         tapping-term-ms = <200>;
                         bindings = <&lt RAISE BSPC>, <&kp BSPC>;
                 };
-                
+
+                ht1: hold_tap_1 {
+                        compatible = "zmk,behavior-hold-tap";
+                        label = "HOLD_TAP_1";
+                        #binding-cells = <2>;
+                        flavor = "tap-preferred";
+                        tapping-term-ms = <200>;
+                        quick-tap-ms = <125>;
+                        bindings = <&kp>, <&kp>;
+                };
         };
 
         keymap {
@@ -48,7 +57,7 @@
    &kp ESC   &kp Q &kp W &kp E          &kp R           &kp T     &kp Y     &kp U &kp I        &kp O   &kp P    &kp EQUAL
    &kp LCTRL &kp A &kp S &kp D          &kp F           &kp G     &kp H     &kp J &kp K        &kp L   &kp SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C          &kp V           &kp B     &kp N     &kp M &kp COMMA    &kp DOT &kp FSLH &mt RSHFT GRAVE
-                         &lt RAISE LGUI &lt LOWER SPACE &kp SPACE &kp ENTER &td0  &td1
+                         &lt RAISE LGUI &lt LOWER SPACE &kp SPACE &kp ENTER &td0  &ht1 RAISE BSPC
                         >;
                 };
 
